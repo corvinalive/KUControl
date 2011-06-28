@@ -21,12 +21,43 @@
 #       MA 02110-1301, USA.
 #       
 #       
+import serial, struct, binascii, time
 
 
 
 def main():
-	
-	return 0
+	#ser = serial.Serial(0)  # open first serial port
+    #print ser.portstr       # check which port was really used
+    #ser.write("hello")      # write a string
+    
+
+    ser = serial.Serial('/dev/ttyUSB0', 38400, timeout=0.5)
+    ser.bytesize = serial.EIGHTBITS
+    ser.stopbits = serial.STOPBITS_ONE
+    ser.parity = serial.PARITY_NONE
+    #ser.setDTR(0)
+    #s=":WF1900"'\15'
+    #s=":GT3"'\15'
+    s='\1''\3''\14''\32''\0''\1''\246''\235'
+    #print s
+    #x = struct.pack('8s',":WF1700"'\15')
+    #print x, 'newline',binascii.hexlify(x) # 02   ID,0x03,0x01,0x2,0x03,0x04
+    #ser.write(s)
+    
+    #s=":GF1"'\15'
+    print s,'\n' 'newline',binascii.hexlify(s) # 02
+    ser.write(s)
+    time.sleep(0.2)
+    y = ser.read(50)
+    print "y=",binascii.hexlify(y)
+
+    #ser.write(x.encode("Latin1"))
+    #x = ser.read()          # read one byte
+    #s = ser.read(10)        # read up to ten bytes (timeout)
+    #print s
+    #line = ser.readline()   # read a '\n' terminated line
+    ser.close()
+    return 0
 
 if __name__ == '__main__':
 	main()
