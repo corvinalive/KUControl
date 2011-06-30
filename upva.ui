@@ -364,10 +364,10 @@
           <number>0</number>
          </property>
          <property name="maximum">
-          <number>15000</number>
+          <number>1000000000</number>
          </property>
          <property name="value">
-          <number>0</number>
+          <number>100000</number>
          </property>
         </widget>
        </item>
@@ -513,7 +513,42 @@
          </property>
         </widget>
        </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="pushButtont1">
+         <property name="text">
+          <string>T1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="pushButtont2">
+         <property name="text">
+          <string>T2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QPushButton" name="pushButtont3">
+         <property name="text">
+          <string>T3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QPushButton" name="pushButtont4">
+         <property name="text">
+          <string>T4</string>
+         </property>
+        </widget>
+       </item>
       </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonreadall">
+       <property name="text">
+        <string>Прочитать всё</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
