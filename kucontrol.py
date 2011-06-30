@@ -28,13 +28,26 @@ from upvaui import Ui_MainWindow
 class MyMainWindow(QtGui.QMainWindow):
     
     def pushButtonf1(self):
-        f=self.ui.spinBoxf1.value()
-        s=":WF11100"'\15'
-        s=":WF11500"'\15'
-        
-        print s
-        self.ser.setRTS(0)
+        f=self.ui.doubleSpinBoxf1.value()
+        s=":WF1"+str(f)+'\15'
         self.ser.write(s)
+
+    def pushButtonf2(self):
+        f=self.ui.doubleSpinBoxf2.value()
+        s=":WF2"+str(f)+'\15'
+        self.ser.write(s)
+
+    def pushButtonf3(self):
+        f=self.ui.doubleSpinBoxf3.value()
+        s=":WF3"+str(f)+'\15'
+        self.ser.write(s)
+
+    def pushButtonf4(self):
+        f=self.ui.doubleSpinBoxf4.value()
+        s=":WF4"+str(f)+'\15'
+        self.ser.write(s)
+
+  
 
     def __init__(self, parent=None):
         super(MyMainWindow, self).__init__(parent)
@@ -47,6 +60,9 @@ class MyMainWindow(QtGui.QMainWindow):
         #self.ser.setDTR(1)
         #self.ser.setRTS(0)
         self.connect(self.ui.pushButtonf1, QtCore.SIGNAL("clicked()"), self.pushButtonf1)
+        self.connect(self.ui.pushButtonf2, QtCore.SIGNAL("clicked()"), self.pushButtonf2)
+        self.connect(self.ui.pushButtonf3, QtCore.SIGNAL("clicked()"), self.pushButtonf3)
+        self.connect(self.ui.pushButtonf4, QtCore.SIGNAL("clicked()"), self.pushButtonf4)
         
 
 		

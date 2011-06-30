@@ -26,50 +26,6 @@
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="1" column="0">
-        <widget class="QSpinBox" name="A1box"/>
-       </item>
-       <item row="1" column="1">
-        <widget class="QSpinBox" name="A2box"/>
-       </item>
-       <item row="1" column="2">
-        <widget class="QSpinBox" name="A3box"/>
-       </item>
-       <item row="1" column="3">
-        <widget class="QSpinBox" name="A4box">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>20</width>
-           <height>0</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QSpinBox" name="A5box"/>
-       </item>
-       <item row="1" column="5">
-        <widget class="QSpinBox" name="A6box">
-         <property name="maximum">
-          <number>20</number>
-         </property>
-         <property name="value">
-          <number>4</number>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="6">
-        <widget class="QSpinBox" name="A7box"/>
-       </item>
-       <item row="1" column="7">
-        <widget class="QSpinBox" name="A8box"/>
-       </item>
        <item row="2" column="0">
         <widget class="QPushButton" name="A1pushButton">
          <property name="text">
@@ -206,6 +162,146 @@
          </property>
         </widget>
        </item>
+       <item row="1" column="0">
+        <widget class="QDoubleSpinBox" name="A1box">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="A2box">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QDoubleSpinBox" name="A3box">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QDoubleSpinBox" name="A4box">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QDoubleSpinBox" name="A5box">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QDoubleSpinBox" name="A6box">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QDoubleSpinBox" name="A7box">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QDoubleSpinBox" name="A8box">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>22.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
      <item>
@@ -238,36 +334,10 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="2">
-        <widget class="QSpinBox" name="spinBoxf1">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="maximum">
-          <number>15000</number>
-         </property>
-         <property name="value">
-          <number>1000</number>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="2">
         <widget class="QPushButton" name="pushButtonf1">
          <property name="text">
           <string>F1</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QSpinBox" name="spinBoxf2">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="maximum">
-          <number>15000</number>
-         </property>
-         <property name="value">
-          <number>1000</number>
          </property>
         </widget>
        </item>
@@ -278,36 +348,10 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="4">
-        <widget class="QSpinBox" name="spinBoxf3">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="maximum">
-          <number>15000</number>
-         </property>
-         <property name="value">
-          <number>1000</number>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="4">
         <widget class="QPushButton" name="pushButtonf3">
          <property name="text">
           <string>F3</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="5">
-        <widget class="QSpinBox" name="spinBoxf4">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="maximum">
-          <number>15000</number>
-         </property>
-         <property name="value">
-          <number>1000</number>
          </property>
         </widget>
        </item>
@@ -320,7 +364,7 @@
           <number>0</number>
          </property>
          <property name="maximum">
-          <number>0</number>
+          <number>15000</number>
          </property>
          <property name="value">
           <number>0</number>
@@ -402,6 +446,70 @@
         <widget class="QLabel" name="label_14">
          <property name="text">
           <string>Старт/стоп</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QDoubleSpinBox" name="doubleSpinBoxf1">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>15000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>1000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QDoubleSpinBox" name="doubleSpinBoxf2">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>15000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>1000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QDoubleSpinBox" name="doubleSpinBoxf3">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>15000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>1000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QDoubleSpinBox" name="doubleSpinBoxf4">
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="decimals">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <double>15000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>1000.000000000000000</double>
          </property>
         </widget>
        </item>
