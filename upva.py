@@ -151,7 +151,7 @@ class MyMainWindow(QtGui.QMainWindow):
             time.sleep(delay)                        
 
     def pushButtonreadall(self):
-        delay=0.5
+        delay=0.1
         #читаем аналоговые входа
         s=":GA1"'\15'
         self.ser.write(s)
@@ -256,7 +256,7 @@ class MyMainWindow(QtGui.QMainWindow):
         self.ui.setupUi(self)
         print "com=",com
         try:
-		    self.ser = serial.Serial(com, 9600, timeout=0.5)#,rtscts=0)
+		    self.ser = serial.Serial(com, 9600, timeout=0.2)#,rtscts=0)
         except :
             msgBox = QtGui.QMessageBox()
             msgBox.setText(u"Ошибка")

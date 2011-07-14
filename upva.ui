@@ -6,552 +6,546 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>742</width>
-    <height>371</height>
+    <width>767</width>
+    <height>390</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Управление УПВА</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>726</width>
-      <height>351</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="2" column="0">
-        <widget class="QPushButton" name="A1pushButton">
-         <property name="text">
-          <string>A1</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="A2pushButton">
-         <property name="text">
-          <string>A2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QPushButton" name="A3pushButton">
-         <property name="text">
-          <string>A3</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QPushButton" name="A4pushButton">
-         <property name="text">
-          <string>A4</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QPushButton" name="A5pushButton">
-         <property name="text">
-          <string>A5</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="5">
-        <widget class="QPushButton" name="A6pushButton">
-         <property name="text">
-          <string>A6</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="6">
-        <widget class="QPushButton" name="A7pushButton">
-         <property name="text">
-          <string>A7</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="7">
-        <widget class="QPushButton" name="A8pushButton">
-         <property name="text">
-          <string>A8</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label1">
-         <property name="text">
-          <string>A1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="label2">
-         <property name="text">
-          <string>A2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label3">
-         <property name="text">
-          <string>A3</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="label4">
-         <property name="text">
-          <string>A4</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QLabel" name="label5">
-         <property name="text">
-          <string>A5</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="5">
-        <widget class="QLabel" name="label6">
-         <property name="text">
-          <string>A6</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="6">
-        <widget class="QLabel" name="label7">
-         <property name="text">
-          <string>A7</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="7">
-        <widget class="QLabel" name="label8">
-         <property name="text">
-          <string>A8</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QDoubleSpinBox" name="A1box">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QDoubleSpinBox" name="A2box">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QDoubleSpinBox" name="A3box">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QDoubleSpinBox" name="A4box">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>20</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QDoubleSpinBox" name="A5box">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="5">
-        <widget class="QDoubleSpinBox" name="A6box">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="6">
-        <widget class="QDoubleSpinBox" name="A7box">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="7">
-        <widget class="QDoubleSpinBox" name="A8box">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>22.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>0.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="set4pushButton">
-       <property name="text">
-        <string>Установить 4 мА по всем каналам</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="set12pushButton">
-       <property name="text">
-        <string>Установить 12 мА по всем каналам</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="set20pushButton">
-       <property name="text">
-        <string>Установить 20 мА по всем каналам</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="2" column="7">
-        <widget class="QPushButton" name="pushButtonsb">
-         <property name="text">
-          <string>Sb</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QPushButton" name="pushButtonf1">
-         <property name="text">
-          <string>F1</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QPushButton" name="pushButtonf2">
-         <property name="text">
-          <string>F2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QPushButton" name="pushButtonf3">
-         <property name="text">
-          <string>F3</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="6">
-        <widget class="QSpinBox" name="spinBoxn">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="minimum">
-          <number>0</number>
-         </property>
-         <property name="maximum">
-          <number>1000000000</number>
-         </property>
-         <property name="value">
-          <number>100000</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="5">
-        <widget class="QPushButton" name="pushButtonf4">
-         <property name="text">
-          <string>F4</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="6">
-        <widget class="QPushButton" name="pushButtonn">
-         <property name="text">
-          <string>N</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="7">
-        <widget class="QPushButton" name="pushButtonsa">
-         <property name="text">
-          <string>Sa</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="labelf1">
-         <property name="text">
-          <string>F1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="labelf2">
-         <property name="text">
-          <string>F2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QLabel" name="labelf3">
-         <property name="text">
-          <string>F3</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="5">
-        <widget class="QLabel" name="labelf4">
-         <property name="text">
-          <string>F4</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="6">
-        <widget class="QLabel" name="labeln">
-         <property name="text">
-          <string>N</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="7">
-        <widget class="QLabel" name="label_14">
-         <property name="text">
-          <string>Старт/стоп</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QDoubleSpinBox" name="doubleSpinBoxf1">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>15000.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>1000.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QDoubleSpinBox" name="doubleSpinBoxf2">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>15000.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>1000.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QDoubleSpinBox" name="doubleSpinBoxf3">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>15000.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>1000.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="5">
-        <widget class="QDoubleSpinBox" name="doubleSpinBoxf4">
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="decimals">
-          <number>3</number>
-         </property>
-         <property name="maximum">
-          <double>15000.000000000000000</double>
-         </property>
-         <property name="value">
-          <double>1000.000000000000000</double>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <widget class="QPushButton" name="pushButtont1">
-         <property name="text">
-          <string>T1</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="QPushButton" name="pushButtont2">
-         <property name="text">
-          <string>T2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="4">
-        <widget class="QPushButton" name="pushButtont3">
-         <property name="text">
-          <string>T3</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="5">
-        <widget class="QPushButton" name="pushButtont4">
-         <property name="text">
-          <string>T4</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButtonreadall">
-       <property name="text">
-        <string>Прочитать всё</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QPushButton" name="A1pushButton">
+          <property name="text">
+           <string>A1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="A2pushButton">
+          <property name="text">
+           <string>A2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="A3pushButton">
+          <property name="text">
+           <string>A3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="A4pushButton">
+          <property name="text">
+           <string>A4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="A5pushButton">
+          <property name="text">
+           <string>A5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QPushButton" name="A6pushButton">
+          <property name="text">
+           <string>A6</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QPushButton" name="A7pushButton">
+          <property name="text">
+           <string>A7</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7">
+         <widget class="QPushButton" name="A8pushButton">
+          <property name="text">
+           <string>A8</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label1">
+          <property name="text">
+           <string>A1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label2">
+          <property name="text">
+           <string>A2</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label3">
+          <property name="text">
+           <string>A3</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label4">
+          <property name="text">
+           <string>A4</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label5">
+          <property name="text">
+           <string>A5</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="label6">
+          <property name="text">
+           <string>A6</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QLabel" name="label7">
+          <property name="text">
+           <string>A7</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="label8">
+          <property name="text">
+           <string>A8</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QDoubleSpinBox" name="A1box">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDoubleSpinBox" name="A2box">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QDoubleSpinBox" name="A3box">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QDoubleSpinBox" name="A4box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QDoubleSpinBox" name="A5box">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QDoubleSpinBox" name="A6box">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QDoubleSpinBox" name="A7box">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QDoubleSpinBox" name="A8box">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>22.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="set4pushButton">
+        <property name="text">
+         <string>Установить 4 мА по всем каналам</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="set12pushButton">
+        <property name="text">
+         <string>Установить 12 мА по всем каналам</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="set20pushButton">
+        <property name="text">
+         <string>Установить 20 мА по всем каналам</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="2" column="7">
+         <widget class="QPushButton" name="pushButtonsb">
+          <property name="text">
+           <string>Sb</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButtonf1">
+          <property name="text">
+           <string>F1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="pushButtonf2">
+          <property name="text">
+           <string>F2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="pushButtonf3">
+          <property name="text">
+           <string>F3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QSpinBox" name="spinBoxn">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>1000000000</number>
+          </property>
+          <property name="value">
+           <number>100000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QPushButton" name="pushButtonf4">
+          <property name="text">
+           <string>F4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QPushButton" name="pushButtonn">
+          <property name="text">
+           <string>N</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QPushButton" name="pushButtonsa">
+          <property name="text">
+           <string>Sa</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="labelf1">
+          <property name="text">
+           <string>F1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="labelf2">
+          <property name="text">
+           <string>F2</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="labelf3">
+          <property name="text">
+           <string>F3</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="labelf4">
+          <property name="text">
+           <string>F4</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QLabel" name="labeln">
+          <property name="text">
+           <string>N</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Старт/стоп</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QDoubleSpinBox" name="doubleSpinBoxf1">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>999999999.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>1000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QDoubleSpinBox" name="doubleSpinBoxf2">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>999999999.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>1000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QDoubleSpinBox" name="doubleSpinBoxf3">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>999999999.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>1000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QDoubleSpinBox" name="doubleSpinBoxf4">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>999999999.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>1000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="pushButtont1">
+          <property name="text">
+           <string>T1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QPushButton" name="pushButtont2">
+          <property name="text">
+           <string>T2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QPushButton" name="pushButtont3">
+          <property name="text">
+           <string>T3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QPushButton" name="pushButtont4">
+          <property name="text">
+           <string>T4</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonreadall">
+        <property name="text">
+         <string>Прочитать всё</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
