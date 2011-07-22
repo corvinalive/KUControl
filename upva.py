@@ -256,7 +256,7 @@ class MyMainWindow(QtGui.QMainWindow):
         self.ui.setupUi(self)
         print "com=",com
         try:
-		    self.ser = serial.Serial(com, 9600, timeout=0.2)#,rtscts=0)
+		    self.ser = serial.Serial(com, 9600, timeout=0.1)#,rtscts=0)
         except :
             msgBox = QtGui.QMessageBox()
             msgBox.setText(u"Ошибка")
