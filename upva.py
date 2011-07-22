@@ -27,6 +27,12 @@ from upvaui import Ui_MainWindow
 
 class MyMainWindow(QtGui.QMainWindow):
     
+    def AboutpushButton(self):
+        QtGui.QMessageBox.about(self,u"Управление УПВА", u"Программа для управления УПВА.\n\
+Автор: Зонов Валерий\nЛицензия: GNU GPL v. 2\nСделана с использованием: Python, Qt, PySide\n\
+Версия для Windows сделаны с помощью PyInstaller\n\
+Исходный код находится на https://github.com/corvinalive/KUControl")
+
     def pushButtonf1(self):
         f=self.ui.doubleSpinBoxf1.value()
         s=":WF1"+str(f)+'\15'
@@ -66,8 +72,6 @@ class MyMainWindow(QtGui.QMainWindow):
         f=self.ui.doubleSpinBoxf4.value()
         s=":WT4"+str(f)+'\15'
         self.ser.write(s)
-
-
 
     def pushButtonn(self):
         f=self.ui.spinBoxn.value()
@@ -130,7 +134,7 @@ class MyMainWindow(QtGui.QMainWindow):
         delay=0.5
         for i in range(8):
             s=":WA"+str(i+1)+"4"'\15'
-            print s,"\n"
+#            print s,"\n"
             self.ser.write(s)
             time.sleep(delay)
             
@@ -138,7 +142,7 @@ class MyMainWindow(QtGui.QMainWindow):
         delay=0.5
         for i in range(8):
             s=":WA"+str(i+1)+"12"'\15'
-            print s,"\n"
+#            print s,"\n"
             self.ser.write(s)
             time.sleep(delay)
             
@@ -146,12 +150,12 @@ class MyMainWindow(QtGui.QMainWindow):
         delay=0.5
         for i in range(8):
             s=":WA"+str(i+1)+"20"'\15'
-            print s,"\n"
+#            print s,"\n"
             self.ser.write(s)
             time.sleep(delay)                        
 
-    def pushButtonreadall(self):
-        delay=0.1
+    def pushButtonreadAO(self):
+        delay=self.delay_between_read
         #читаем аналоговые входа
         s=":GA1"'\15'
         self.ser.write(s)
@@ -199,8 +203,9 @@ class MyMainWindow(QtGui.QMainWindow):
         self.ser.write(s)
         y=self.ser.read(20)
         self.ui.label8.setText(y[1:])
-        time.sleep(delay)
 
+    def pushButtonreadFO(self):
+        delay=self.delay_between_read
 		#Читаем частотные входа
 		# 1
         s=":GF1"'\15'
@@ -265,9 +270,8 @@ class MyMainWindow(QtGui.QMainWindow):
             #msgBox.setDefaultButton(QMessageBox.Save)
             msgBox.exec_()
             sys.exit(1)
-
-
-    
+            
+        self.delay_between_read = 0.1
 		 
         self.ser.bytesize = serial.EIGHTBITS
         self.ser.stopbits = serial.STOPBITS_ONE
@@ -296,9 +300,10 @@ class MyMainWindow(QtGui.QMainWindow):
         self.connect(self.ui.pushButtont2, QtCore.SIGNAL("clicked()"), self.pushButtont2)
         self.connect(self.ui.pushButtont3, QtCore.SIGNAL("clicked()"), self.pushButtont3)
         self.connect(self.ui.pushButtont4, QtCore.SIGNAL("clicked()"), self.pushButtont4)
-        self.connect(self.ui.pushButtonreadall, QtCore.SIGNAL("clicked()"), self.pushButtonreadall)
-		
-    
+        self.connect(self.ui.pushButtonreadAO, QtCore.SIGNAL("clicked()"), self.pushButtonreadAO)
+        self.connect(self.ui.pushButtonreadFO, QtCore.SIGNAL("clicked()"), self.pushButtonreadFO)
+        self.connect(self.ui.AboutpushButton, QtCore.SIGNAL("clicked()"), self.AboutpushButton)
+		    
 
 def main():
     app = QtGui.QApplication(sys.argv)
