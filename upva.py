@@ -28,7 +28,7 @@ from upvaui import Ui_MainWindow
 class MyMainWindow(QtGui.QMainWindow):
     
     def AboutpushButton(self):
-        QtGui.QMessageBox.about(self,u"Управление УПВА", u"Программа для управления УПВА.\n\
+        QtGui.QMessageBox.about(self,u"Управление УПВА", u"Программа для управления УПВА версия 0.2 июль 2011 г.\n\
 Автор: Зонов Валерий\nЛицензия: GNU GPL v. 2\nСделана с использованием: Python, Qt, PySide\n\
 Версия для Windows сделаны с помощью PyInstaller\n\
 Исходный код находится на https://github.com/corvinalive/KUControl")
