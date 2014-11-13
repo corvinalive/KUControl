@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>747</width>
+    <width>801</width>
     <height>427</height>
    </rect>
   </property>
@@ -310,30 +310,37 @@
        </layout>
       </item>
       <item>
+       <widget class="QPushButton" name="set0pushButton">
+        <property name="text">
+         <string>&amp;0. Установить 0 мА по всем каналам</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="set4pushButton">
         <property name="text">
-         <string>Установить 4 мА по всем каналам</string>
+         <string>&amp;1. Установить 4 мА по всем каналам</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="set12pushButton">
         <property name="text">
-         <string>Установить 12 мА по всем каналам</string>
+         <string>&amp;2. Установить 12 мА по всем каналам</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="set20pushButton">
         <property name="text">
-         <string>Установить 20 мА по всем каналам</string>
+         <string>&amp;3. Установить 20 мА по всем каналам</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonreadAO">
         <property name="text">
-         <string>Прочитать ток</string>
+         <string>&amp;A. Прочитать ток</string>
         </property>
        </widget>
       </item>
@@ -558,7 +565,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonreadFO">
         <property name="text">
-         <string>Прочитать частотные выходы</string>
+         <string>&amp;F. Прочитать частотные выходы</string>
         </property>
        </widget>
       </item>
@@ -567,6 +574,47 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>AboutpushButton</tabstop>
+  <tabstop>A1box</tabstop>
+  <tabstop>A1pushButton</tabstop>
+  <tabstop>A2box</tabstop>
+  <tabstop>A2pushButton</tabstop>
+  <tabstop>A3box</tabstop>
+  <tabstop>A3pushButton</tabstop>
+  <tabstop>A4box</tabstop>
+  <tabstop>A4pushButton</tabstop>
+  <tabstop>A5box</tabstop>
+  <tabstop>A5pushButton</tabstop>
+  <tabstop>A6box</tabstop>
+  <tabstop>A6pushButton</tabstop>
+  <tabstop>A7box</tabstop>
+  <tabstop>A7pushButton</tabstop>
+  <tabstop>A8box</tabstop>
+  <tabstop>A8pushButton</tabstop>
+  <tabstop>set0pushButton</tabstop>
+  <tabstop>set4pushButton</tabstop>
+  <tabstop>set12pushButton</tabstop>
+  <tabstop>set20pushButton</tabstop>
+  <tabstop>pushButtonreadAO</tabstop>
+  <tabstop>doubleSpinBoxf1</tabstop>
+  <tabstop>pushButtonf1</tabstop>
+  <tabstop>pushButtont1</tabstop>
+  <tabstop>doubleSpinBoxf2</tabstop>
+  <tabstop>pushButtonf2</tabstop>
+  <tabstop>pushButtont2</tabstop>
+  <tabstop>doubleSpinBoxf3</tabstop>
+  <tabstop>pushButtonf3</tabstop>
+  <tabstop>pushButtont3</tabstop>
+  <tabstop>doubleSpinBoxf4</tabstop>
+  <tabstop>pushButtonf4</tabstop>
+  <tabstop>pushButtont4</tabstop>
+  <tabstop>spinBoxn</tabstop>
+  <tabstop>pushButtonn</tabstop>
+  <tabstop>pushButtonsa</tabstop>
+  <tabstop>pushButtonsb</tabstop>
+  <tabstop>pushButtonreadFO</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

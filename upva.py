@@ -21,14 +21,14 @@
 #       MA 02110-1301, USA.
 #       
 #       
-import serial, struct, binascii, time, sys
+import serial, struct, binascii, time, sys, os
 from PySide import QtCore, QtGui
 from upvaui import Ui_MainWindow
 
 class MyMainWindow(QtGui.QMainWindow):
     
     def AboutpushButton(self):
-        QtGui.QMessageBox.about(self,u"Управление УПВА", u"Программа для управления УПВА версия 0.2 июль 2011 г.\n\
+        QtGui.QMessageBox.about(self,u"Управление УПВА", u"Программа для управления УПВА версия 0.3 ноябрь 2014 г.\n\
 Автор: Зонов Валерий\nЛицензия: GNU GPL v. 2\nСделана с использованием: Python, Qt, PySide\n\
 Версия для Windows сделаны с помощью PyInstaller\n\
 Исходный код находится на https://github.com/corvinalive/KUControl")
@@ -150,7 +150,13 @@ class MyMainWindow(QtGui.QMainWindow):
         delay=0.5
         for i in range(8):
             s=":WA"+str(i+1)+"20"'\15'
-#            print s,"\n"
+            self.ser.write(s)
+            time.sleep(delay)                        
+
+    def pushButtonset0(self):
+        delay=0.5
+        for i in range(8):
+            s=":WA"+str(i+1)+"0"'\15'
             self.ser.write(s)
             time.sleep(delay)                        
 
@@ -296,6 +302,7 @@ class MyMainWindow(QtGui.QMainWindow):
         self.connect(self.ui.set4pushButton, QtCore.SIGNAL("clicked()"), self.pushButtonset4)
         self.connect(self.ui.set12pushButton, QtCore.SIGNAL("clicked()"), self.pushButtonset12)
         self.connect(self.ui.set20pushButton, QtCore.SIGNAL("clicked()"), self.pushButtonset20)
+        self.connect(self.ui.set0pushButton, QtCore.SIGNAL("clicked()"), self.pushButtonset0)
         self.connect(self.ui.pushButtont1, QtCore.SIGNAL("clicked()"), self.pushButtont1)
         self.connect(self.ui.pushButtont2, QtCore.SIGNAL("clicked()"), self.pushButtont2)
         self.connect(self.ui.pushButtont3, QtCore.SIGNAL("clicked()"), self.pushButtont3)
@@ -310,6 +317,8 @@ def main():
     text = QtGui.QInputDialog.getText(None, u"Имя com-порта",
                                      u"Введите имя com-порта\n(для Windows, например, COM1\nДля Linux /dev/ttyUSB0",
                                      text="/dev/ttyUSB0")
+#    os.execvp("gksu", ("chmod", "777", text[0]))
+    os.system("gksu chmod 777 "+ text[0])
     myapp = MyMainWindow(com=text[0])
     myapp.show()
     result=app.exec_()
