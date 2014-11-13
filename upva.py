@@ -22,6 +22,7 @@
 #       
 #       
 import serial, struct, binascii, time, sys, os
+import platform
 from PySide import QtCore, QtGui
 from upvaui import Ui_MainWindow
 
@@ -265,7 +266,7 @@ class MyMainWindow(QtGui.QMainWindow):
         super(MyMainWindow, self).__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        print "com=",com
+        #print "com=",com
         try:
 		    self.ser = serial.Serial(com, 9600, timeout=0.1)#,rtscts=0)
         except :
@@ -317,8 +318,8 @@ def main():
     text = QtGui.QInputDialog.getText(None, u"Имя com-порта",
                                      u"Введите имя com-порта\n(для Windows, например, COM1\nДля Linux /dev/ttyUSB0",
                                      text="/dev/ttyUSB0")
-#    os.execvp("gksu", ("chmod", "777", text[0]))
-    os.system("gksu chmod 777 "+ text[0])
+    if (platform.system() == "Linux"):
+        os.system("gksu chmod 777 "+ text[0])
     myapp = MyMainWindow(com=text[0])
     myapp.show()
     result=app.exec_()
